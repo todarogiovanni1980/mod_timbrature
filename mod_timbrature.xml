@@ -2,6 +2,8 @@
 <install type="module" version="1.5" client="site" method="upgrade">
     <name>Modulo Visualizzazione Ultime Timbrature - Gestionale Presenze</name>
     <author>Giovanni Todaro</author>
+    <authorUrl>https://www.cnr.it/people/giovanni.todaro</authorUrl>
+    <creationDate>Giovedì, 17 Giugno 2021 12:08</creationDate>
     <version>1.0.0</version>
     <description>Un semplice modulo per visualizzare le ultime timbrature sul lato amministrativo del gestionale presenze CNR ITD Palermo.</description>
     <files>
