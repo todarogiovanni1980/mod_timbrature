@@ -25,10 +25,12 @@ class ModTimbratureHelper
         // Obtain a database connection
         $db = JFactory::getDbo();
         // Retrieve the shout
-        $query = $db->getQuery(true)
-                    ->select($db->quoteName('data'),$db->quoteName('ora'),$db->quoteName('matricola'))
-                    ->from($db->quoteName('#__presenze_timbrature'))
-                    ->order($db->quoteName('id') . ' DESC');
+        // $query = $db->getQuery(true)
+        //             ->select($db->quoteName('data'),$db->quoteName('ora'),$db->quoteName('matricola'))
+        //             ->from($db->quoteName('#__presenze_timbrature'))
+        //             ->order($db->quoteName('id') . ' DESC');
+
+        $query = "SELECT * FROM `#__presenze_timbrature` ORDER BY `id`  DESC";
         // Prepare the query
         $db->setQuery($query);
         // Load the row.
