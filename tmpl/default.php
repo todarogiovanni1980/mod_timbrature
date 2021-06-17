@@ -17,6 +17,7 @@ defined('_JEXEC') or die; ?>
 	</td>
 </tr>
 <?php
+
 if (count( $rows ))
 {
 	foreach ($rows as $row)
