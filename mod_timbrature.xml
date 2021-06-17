@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module" version="1.5" client="site" method="upgrade">
+<install type="module" version="1.5" client="administrator" method="upgrade">
     <name>Modulo Visualizzazione Ultime Timbrature - Gestionale Presenze</name>
     <author>Giovanni Todaro</author>
     <authorUrl>https://www.cnr.it/people/giovanni.todaro</authorUrl>
