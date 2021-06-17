@@ -22,6 +22,18 @@ class ModTimbratureHelper
      */    
     public static function getHello($params)
     {
-        return 'Ciao, Gestione Presenze!';
+        // Obtain a database connection
+        $db = JFactory::getDbo();
+        // Retrieve the shout
+        $query = $db->getQuery(true)
+                    ->select($db->quoteName('data'),$db->quoteName('ora'),$db->quoteName('matricola'))
+                    ->from($db->quoteName('#__presenze_timbrature'))
+                    ->order($db->quoteName('id') . ' DESC');
+        // Prepare the query
+        $db->setQuery($query);
+        // Load the row.
+        $result = $db->loadResult();
+        // Return the Hello
+        return $result;
     }
 }
