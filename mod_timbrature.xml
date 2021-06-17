@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.5" client="site" method="upgrade">
+<install type="module" version="1.5" client="site" method="upgrade">
     <name>Gestionale Presenze Ultime timbrature</name>
     <author>Giovanni Todaro</author>
     <version>1.0.0</version>
@@ -14,4 +14,4 @@
     </files>
     <config>
     </config>
-</extension>
+</install>
